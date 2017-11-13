@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
    <title>L is L</title>
-
+   
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,6 +20,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/additionalstyles.css" rel="stylesheet">
+      
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
   </head>
 
@@ -52,8 +56,24 @@
       </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+      <!-- Page Header -->
+    <div class="slideshow">
+        <div>
+            <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                      <h1>L is L Blog</h1>
+                      <span class="subheading">The most chaotic blog ever</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+        </div>
+        <div>
+            <header class="masthead" style="background-image: url('img/home-bg-1.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
@@ -65,7 +85,42 @@
         </div>
       </div>
     </header>
-
+        </div>
+        <div>
+            <header class="masthead" style="background-image: url('img/home-bg-2.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>L is L Blog</h1>
+              <span class="subheading">The most chaotic blog ever</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+        </div>
+        <div>
+            <header class="masthead" style="background-image: url('img/home-bg-3.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>L is L Blog</h1>
+              <span class="subheading">The most chaotic blog ever</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+        </div>
+    </div>
+  
+    <!-- Video -->
+  <div id="video" class="embed-responsive embed-responsive-16by9">
+        <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/R-cBKjFl6Os" allowfullscreen></iframe>
+  </div>
+      
     <!-- Main Content -->
     <div class="container">
       <div class="row">
@@ -137,10 +192,27 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
 
+    <!--Slick -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slideshow').slick({
+          lazyLoad: 'ondemand',
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+      });
+    });
+  </script>
+  
   </body>
 
 </html>
