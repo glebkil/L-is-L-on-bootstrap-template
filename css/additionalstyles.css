@@ -1,5 +1,4 @@
 #video {
-    width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -7,12 +6,23 @@
     margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 992px){
+  
+@media only screen and (min-width: 0){
+    #video {
+    width: 100%;
+}
+
+    @media only screen and (min-width: 768px){
     #video {
     width: 80%;
 }
-    
-@media only screen and (max-width: 0){
+        
+@media only screen and (min-width: 992px){
     #video {
-    width: 100%;
+    width: 60%;
+}
+    
+@media only screen and (min-width: 1200px){
+    #video {
+    width: 40%;
 }
